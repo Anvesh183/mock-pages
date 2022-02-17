@@ -1,0 +1,83 @@
+/****************************************************/
+/*********************GENERAL***********************/
+/****************************************************/
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:active {
+  opacity: 0.9;
+}
+
+/****************************************************/
+/*************UTILITY CLASSES************************/
+/****************************************************/
+
+/******Colors******/
+
+.txt-white {
+  color: #ffffff;
+}
+
+.bgc-blue {
+  background-color: #0c42ff;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fz-2 {
+  font-size: 2rem;
+}
+
+.card {
+  box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.image {
+  display: block;
+  max-width: 100%;
+}
+
+.margin-auto {
+  margin: 0 auto;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+/****************************************************/
+/****************SECTION-THANKYOU********************/
+/****************************************************/
+
+.section-thank-you {
+  max-width: 47rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.btn-return-home-page {
+  padding: 1rem 3rem;
+  font-size: 1.5rem;
+  display: inline-block;
+}
+
+.thank-you-text {
+  margin-top: 3.687rem;
+  margin-bottom: 1.687rem;
+}
