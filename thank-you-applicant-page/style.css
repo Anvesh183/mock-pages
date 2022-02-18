@@ -61,6 +61,50 @@ a:active {
   text-align: center;
 }
 
+/*Navbar*/
+
+.navbar {
+  max-width: 90rem;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 0 9rem;
+  border: 1px solid #e2e6e9;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.navbar .nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 0;
+  /* padding: 1.875rem 0; */
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 2.8125rem;
+}
+
+.navbar a:link,
+.navbar a:visited {
+  text-decoration: none;
+  color: #631919;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar a:link.profile-link,
+.navbar a:visited.profile-link {
+  background-color: #f2f2fd;
+  padding: 6px 9px;
+  border-radius: 50%;
+}
+
 /****************************************************/
 /****************SECTION-THANKYOU********************/
 /****************************************************/
@@ -68,7 +112,7 @@ a:active {
 .section-thank-you {
   max-width: 47rem;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 5rem 2rem;
 }
 
 .btn-return-home-page {
@@ -80,4 +124,29 @@ a:active {
 .thank-you-text {
   margin-top: 3.687rem;
   margin-bottom: 1.687rem;
+}
+
+/*Footer*/
+
+.footer {
+  height: 10rem;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.hr {
+  position: absolute;
+  margin-top: 4.5rem;
+  height: 1px;
+  width: 85%;
+  background-color: #e2e6e9;
+  left: 6rem;
+}
+
+.footer p {
+  position: absolute;
+  right: 6.5rem;
+  top: 4.8rem;
+  color: #74809a;
+  font-size: 14px;
 }

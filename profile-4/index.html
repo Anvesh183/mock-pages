@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Profile 4</title>
+  </head>
+  <body>
+    <nav class="navbar container">
+      <div class="nav-links flex-row">
+        <p><a href="./index.html">Home</a></p>
+        <ul class="flex-row">
+          <li><a href="./index.html">Activites</a></li>
+          <li><a href="./projects.html">Projects</a></li>
+          <li><a href="./leadership.html">Leadership</a></li>
+          <li><a href="#" class="profile-link">SR</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <div class="container">
+        <section class="profile section-padding grid--cols-1 row-gap-1">
+          <div class="profile-completion card">
+            <div class="instructions flex-center">
+              <div class="image-box">
+                <img
+                  src="./assets/Goodies Cool Fire.png"
+                  alt="Goodies Happy Cool Fire"
+                  class="image"
+                />
+              </div>
+              <div class="instructions-text">
+                <h2 class="fw-600">We would love to know your skills!</h2>
+              </div>
+            </div>
+            <div class="progress">
+              <div class="progress-box">
+                <div class="progress-bar"></div>
+              </div>
+              <p>20% Profile Completed</p>
+            </div>
+          </div>
+          <div class="user-input card grid--cols-1">
+            <h2 class="fw-600">Select your Skills</h2>
+            <select name="skills" id="skills">
+              <option value="">Select your skills</option>
+              <option value="">IT</option>
+              <option value="">Content Writing</option>
+              <option value="">Graphic Design</option>
+              <option value="">Social Media</option>
+              <option value="">Research</option>
+              <option value="">Accounting & Finance</option>
+              <option value="">Coaching & Training</option>
+              <option value="">Management & Strategy</option>
+              <option value="">Translation</option>
+              <option value="">Proofreading</option>
+              <option value="">Audio & Video Editing</option>
+              <option value="">Administration</option>
+              <option value="">Fundraising</option>
+              <option value="">Marketing</option>
+            </select>
+            <div class="buttons">
+              <button class="btn btn-back">Back</button>
+              <button class="btn btn-next">Next</button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <section class="footer">
+          <div class="hr"></div>
+          <p>Built on Frappe</p>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>

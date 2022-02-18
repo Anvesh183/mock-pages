@@ -1,24 +1,71 @@
-/****************************************************/
-/*********************GENERAL***********************/
-/****************************************************/
+/*RESET*/
 
 *,
 *::after,
 *::before {
-  box-sizing: border-box;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+input,
+select,
+button {
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+/*Variables*/
+
+:root {
+  --bgc-body: #f5fafe;
+  --clr-pure-white: #ffffff;
+  --clr-nav-links: #631919;
+  --clr-blue-strong: #281cbb;
 }
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: var(--bgc-body);
+  color: #1e1e21;
+  /* height: 100vh; */
 }
 
-a:link {
-  text-decoration: none;
+/*Reusable Classes*/
+
+.container {
+  max-width: 90rem;
+  margin: 0 auto;
 }
 
-a:active {
-  opacity: 0.9;
+.flex-row {
+  display: flex;
+}
+
+.section-padding {
+  padding: 7.5rem 9rem 2rem;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
 }
 
 /****************************************************/
@@ -33,10 +80,6 @@ a:active {
 
 .bgc-blue {
   background-color: #0c42ff;
-}
-
-.fw-500 {
-  font-weight: 500;
 }
 
 .fz-2 {
@@ -65,14 +108,47 @@ a:active {
   text-align: center;
 }
 
-/*GALLERY SECTION*/
-.section-gallery {
-  max-width: 90rem;
-  padding: 1rem 2rem;
+/*Navbar*/
+
+.navbar {
+  background-color: var(--clr-pure-white);
+  padding: 0 9rem;
+  border: 1px solid #e2e6e9;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
-.section-gallery h1 {
-  padding: 0 0 1rem 1rem;
+.navbar .nav-links {
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 0;
+  /* padding: 1.875rem 0; */
+}
+
+.navbar ul {
+  justify-content: center;
+  align-items: center;
+  column-gap: 2.8125rem;
+}
+
+.navbar a:link,
+.navbar a:visited {
+  color: var(--clr-nav-links);
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar a:link.profile-link,
+.navbar a:visited.profile-link {
+  background-color: #f2f2fd;
+  padding: 6px 9px;
+  border-radius: 50%;
+}
+
+/***************GALLERY SECTION*****************/
+.gallery h1 {
+  padding: 0 0 2rem 1rem;
 }
 
 .gallery-grid {
@@ -100,4 +176,29 @@ a:active {
   text-align: left;
   padding: 1rem;
   line-height: 24px;
+}
+
+/*****************Footer***************/
+
+.footer {
+  height: 10rem;
+  background-color: var(--clr-pure-white);
+  position: relative;
+}
+
+.hr {
+  position: absolute;
+  margin-top: 4.5rem;
+  height: 1px;
+  width: 85%;
+  background-color: #e2e6e9;
+  left: 6rem;
+}
+
+.footer p {
+  position: absolute;
+  right: 6.5rem;
+  top: 4.8rem;
+  color: #74809a;
+  font-size: 14px;
 }
