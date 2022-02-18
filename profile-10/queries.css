@@ -1,0 +1,32 @@
+@media (max-width: 800px) {
+  html {
+    font-size: 60%;
+  }
+
+  .profile {
+    padding: 1rem 3rem;
+  }
+
+  .profile-completion {
+    padding: 1rem;
+    grid-column: 1;
+    column-gap: 1rem;
+    align-items: center;
+    margin: 5rem 0 0 0;
+  }
+
+  .profile-completion-image img {
+    height: 10rem;
+  }
+
+  .profile {
+    grid-template-columns: 1fr;
+    row-gap: 3rem;
+  }
+
+  .btn {
+    padding: 0.5rem;
+    letter-spacing: normal;
+  }
+
+  
